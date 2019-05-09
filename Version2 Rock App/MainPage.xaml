@@ -10,7 +10,7 @@
 
     <Grid Background="White">
 
-        <Rectangle HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" StrokeThickness="3" FocusVisualPrimaryBrush="Black" Fill="#FFE5E5E5" FocusVisualSecondaryBrush="Black" Stroke="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" StrokeThickness="3" FocusVisualPrimaryBrush="Black" Fill="#0ca54d" FocusVisualSecondaryBrush="Black" Stroke="Black"/>
         <Rectangle HorizontalAlignment="Left" Height="490" Margin="312,10,0,0" VerticalAlignment="Top" Width="839" StrokeThickness="3" Stroke="Black" Fill="#FFE5E5E5" FocusVisualPrimaryBrush="Black"/>
         <Button Content="Rundvisning" HorizontalAlignment="Left" Height="47" Margin="36,130,0,0" VerticalAlignment="Top" Width="159"/>
         <Button Content="Kort" HorizontalAlignment="Left" Height="47" Margin="36,192,0,0" VerticalAlignment="Top" Width="159"/>
