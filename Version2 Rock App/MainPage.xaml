@@ -8,7 +8,18 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-            <TextBox Text="Forside"></TextBox>
+    <Grid Background="White">
+
+        <Rectangle HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" StrokeThickness="3" FocusVisualPrimaryBrush="Black" Fill="#FFE5E5E5" FocusVisualSecondaryBrush="Black" Stroke="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="490" Margin="312,10,0,0" VerticalAlignment="Top" Width="839" StrokeThickness="3" Stroke="Black" Fill="#FFE5E5E5" FocusVisualPrimaryBrush="Black"/>
+        <Button Content="Rundvisning" HorizontalAlignment="Left" Height="47" Margin="36,130,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button Content="Kort" HorizontalAlignment="Left" Height="47" Margin="36,192,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button Content="Kontakt" HorizontalAlignment="Left" Height="47" Margin="36,258,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button Content="Forside" HorizontalAlignment="Left" Height="47" Margin="36,58,0,0" VerticalAlignment="Top" Width="159"/>
+        <Rectangle HorizontalAlignment="Left" Height="399" Margin="339,30,0,0" VerticalAlignment="Top" Width="699" StrokeThickness="3" Stroke="Black" FocusVisualPrimaryBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="433,44,0,0" Text="Velkommen" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontSize="20" FocusVisualPrimaryBrush="#FF5F0E0E"/>
+        <TextBlock HorizontalAlignment="Left" Height="229" Margin="353,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" FontSize="24"><Run Text="Velkommen til Rock museet ragnarock."/><LineBreak/><Run Text="Her kan du søge mellem vores artefakor og læse  om deres historie, og få en rundvisning"/></TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="280" Margin="689,105,0,0" VerticalAlignment="Top" Width="301" StrokeThickness="3" Stroke="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="135" Margin="727,130,0,0" Text="PLACEHOLDER TIL BILLEDE" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="36"/>
     </Grid>
 </Page>
