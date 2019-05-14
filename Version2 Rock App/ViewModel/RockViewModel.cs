@@ -15,12 +15,14 @@ namespace Version2_Rock_App.ViewModel
 
 
 
+        #region propertychanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged
             ([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new
                 PropertyChangedEventArgs(propertyName));
-        }
+        } 
+        #endregion
     }
 }
