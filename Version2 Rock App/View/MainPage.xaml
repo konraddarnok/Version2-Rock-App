@@ -9,9 +9,7 @@
     xmlns:myApp ="using:Version2_Rock_App"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.DataContext>
-        <myApp:App></myApp:App>
-    </Page.DataContext>
+    
     <Grid Background="White">
 
         <Rectangle HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" StrokeThickness="3" FocusVisualPrimaryBrush="Black" Fill="#FFE5E5E5" FocusVisualSecondaryBrush="Black" Stroke="LightSteelBlue"/>
