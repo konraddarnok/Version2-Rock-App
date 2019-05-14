@@ -20,9 +20,9 @@ namespace Version2_Rock_App
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Rundvisning : Page
     {
-        public MainPage()
+        public Rundvisning()
         {
             this.InitializeComponent();
         }
