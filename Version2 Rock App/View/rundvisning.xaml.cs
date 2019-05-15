@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Version2_Rock_App.View;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -30,6 +31,16 @@ namespace Version2_Rock_App.View
         private void InitializeComponent()
         {
             throw new NotImplementedException();
+        }
+
+        private void KnapRundvisning_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(rundvisning));
+        }
+
+        private void KnapForside_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

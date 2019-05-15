@@ -122,6 +122,9 @@
     <Compile Include="Model\Artist.cs" />
     <Compile Include="Relay\RelayCommand.cs" />
     <Compile Include="ViewModel\RockViewModel.cs" />
+    <Compile Include="View\Artefakter.xaml.cs">
+      <DependentUpon>Artefakter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -154,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\Artefakter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
