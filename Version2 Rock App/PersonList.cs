@@ -20,9 +20,25 @@ namespace Version2_Rock_App
             _persons.Remove(p);
         }
 
-        public void addPerson(Person p)
+        public void addPerson(Person np)
         {
-            _persons.Add(p);
+            bool exist = false;
+            if (_persons != null)
+            {
+                foreach (var p in _persons)
+                {
+                    if (p.tlfnr == np.tlfnr)
+                        exist = true;
+
+                }
+                if (exist == false)
+                    _persons.Add(np);
+            }
+        }
+
+        public List<Person> Persons
+        {
+            get { return _persons; }
         }
     }
 }

@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace Version2_Rock_App
 {
-    class ContactsViewModel:INotifyPropertyChanged
+    class ContactsViewModel : INotifyPropertyChanged
     {
         private string _name;
         private int _tlfnr;
-
+        private PersonList contactlist;
+        
         public string Name
         {
             get { return _name; }
@@ -23,6 +24,50 @@ namespace Version2_Rock_App
         {
             get { return _tlfnr; }
             set { _tlfnr = value; }
+        }
+
+        public ContactsViewModel()
+        {
+            _selectedPerson= new Person();
+            contactlist = new PersonList();
+            DeleteCommand = new RelayCommand(toDeletePerson);
+            AddCommand = new RelayCommand(toAddPerson);
+        }
+
+        public RelayCommand DeleteCommand { get; set; }
+        public RelayCommand AddCommand { get; set; }
+
+        public void toAddPerson()
+        {
+            Person NewPerson= new Person(_name, _tlfnr);
+            contactlist.addPerson(NewPerson);
+            OnPropertyChanged(nameof(All_Persons));
+        }
+
+        public void toDeletePerson()
+        {
+            contactlist.removePerson(SelectedPerson);
+            OnPropertyChanged(nameof(All_Persons));
+        }
+
+        private Person _selectedPerson;
+
+        public Person SelectedPerson
+        {
+            get { return _selectedPerson; }
+            set { _selectedPerson = value; OnPropertyChanged(); }
+        }
+
+        public ObservableCollection<Person> All_Persons
+        {
+            get
+            {
+                ObservableCollection<Person> collection = new ObservableCollection<Person>(contactlist.Persons);
+                return collection;
+
+
+
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
