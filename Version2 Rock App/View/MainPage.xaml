@@ -22,5 +22,6 @@
         <TextBlock HorizontalAlignment="Left" Height="52" Margin="433,44,0,0" Text="Velkommen" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="24" FocusVisualPrimaryBrush="#FF5F0E0E" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="229" Margin="353,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" FontSize="24"><Run Text="Velkommen til Rock museet ragnarock."/><LineBreak/><Run Text="Her kan du søge mellem vores artefakor og læse  om deres historie, og få en rundvisning"/></TextBlock>
         <Image HorizontalAlignment="Left" Height="280" Margin="689,105,0,0" VerticalAlignment="Top" Width="301" />
+        <Button x:Name="knapTour"  Content="Rundvisning" HorizontalAlignment="Left" Height="47" Margin="36,126,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FocusVisualSecondaryBrush="DodgerBlue" Background="DodgerBlue"/>
     </Grid>
 </Page>
