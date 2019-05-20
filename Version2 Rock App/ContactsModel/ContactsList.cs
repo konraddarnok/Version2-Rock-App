@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Version2_Rock_App
 {
-    class PersonList
+    class ContactsList
     {
         private List<Person> _persons;
 
-        public PersonList()
+        public ContactsList()
         {
             _persons = new List<Person>();
         }
@@ -29,7 +29,6 @@ namespace Version2_Rock_App
                 {
                     if (p.tlfnr == np.tlfnr)
                         exist = true;
-
                 }
                 if (exist == false)
                     _persons.Add(np);
@@ -39,6 +38,17 @@ namespace Version2_Rock_App
         public List<Person> Persons
         {
             get { return _persons; }
+        }
+
+        public async Task SaveAsync()
+        {
+            await _fileSource.SaveAsync(_persons);
+        }
+
+        public async Task <List<Person>> loadAsync()
+        {
+            _persons = await _fileSource.LoadAsync();
+            return _persons;
         }
     }
 }

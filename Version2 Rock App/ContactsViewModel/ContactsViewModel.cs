@@ -12,7 +12,7 @@ namespace Version2_Rock_App
     {
         private string _name;
         private int _tlfnr;
-        private PersonList contactlist;
+        private ContactsList contactlist;
         
         public string Name
         {
@@ -29,7 +29,7 @@ namespace Version2_Rock_App
         public ContactsViewModel()
         {
             _selectedPerson= new Person();
-            contactlist = new PersonList();
+            contactlist = new ContactsList();
             DeleteCommand = new RelayCommand(toDeletePerson);
             AddCommand = new RelayCommand(toAddPerson);
         }
@@ -64,9 +64,6 @@ namespace Version2_Rock_App
             {
                 ObservableCollection<Person> collection = new ObservableCollection<Person>(contactlist.Persons);
                 return collection;
-
-
-
             }
         }
 
