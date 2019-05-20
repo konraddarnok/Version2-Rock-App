@@ -21,26 +21,25 @@ namespace Version2_Rock_App.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Rundvisning : Page
+    public sealed partial class tour : Page
     {
-        public Rundvisning()
+        public tour()
         {
             this.InitializeComponent();
         }
 
-        private void InitializeComponent()
+        private void KnapTour_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            this.Frame.Navigate(typeof(tour));
         }
-
-        private void KnapRundvisning_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(rundvisning));
-        }
-
         private void KnapForside_OnClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+
+        }
+        private void knapArtefakter_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Artefakter));
         }
     }
 }

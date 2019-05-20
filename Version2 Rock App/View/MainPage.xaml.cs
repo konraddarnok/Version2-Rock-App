@@ -34,10 +34,7 @@ namespace Version2_Rock_App
         {
             this.Frame.Navigate(typeof(MainPage));
         }
-        private void KnapRundvisning_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(rundvisning));
-        }
+       
 
         private void knapArtefakter_OnClick(object sender, RoutedEventArgs e)
         {

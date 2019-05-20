@@ -11,7 +11,7 @@
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" StrokeThickness="3" FocusVisualPrimaryBrush="Black" Fill="#FFE5E5E5" FocusVisualSecondaryBrush="Black" Stroke="LightSteelBlue"/>
         <Rectangle HorizontalAlignment="Left" Height="490" Margin="312,10,0,0" VerticalAlignment="Top" Width="839" StrokeThickness="3" Stroke="LightSteelBlue" Fill="#FFE5E5E5" FocusVisualPrimaryBrush="Black"/>
-        <Button x:Name="knapRundvisning" Click="KnapRundvisning_OnClick" Content="Rundvisning" HorizontalAlignment="Left" Height="47" Margin="36,130,0,0" VerticalAlignment="Top" Width="159" Background="DodgerBlue" Foreground="White"/>
+        
         <Button x:Name="knapArtefakter" Click="KnapArtefakter_OnClick" Content="Artefakter" HorizontalAlignment="Left" Height="47" Margin="36,192,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FocusVisualSecondaryBrush="DodgerBlue" Background="DodgerBlue"/>
         <Button x:Name="knapKontakt" Content="Kontakt" HorizontalAlignment="Left" Height="47" Margin="36,258,0,0" VerticalAlignment="Top" Width="159" Background="DodgerBlue" Foreground="White"/>
         <Button x:Name="knapForside" Click="KnapForside_OnClick" Content="Forside" HorizontalAlignment="Left" Height="47" Margin="36,58,0,0" VerticalAlignment="Top" Width="159" Foreground="White" Background="DodgerBlue"/>
