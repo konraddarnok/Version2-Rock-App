@@ -120,6 +120,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Artist.cs" />
+    <Compile Include="Model\genre.cs" />
+    <Compile Include="Model\kort.cs" />
     <Compile Include="Relay\RelayCommand.cs" />
     <Compile Include="ViewModel\RockViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">
