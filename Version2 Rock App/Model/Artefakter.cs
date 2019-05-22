@@ -10,52 +10,62 @@ namespace Version2_Rock_App.Model
 
     
 
-    public class Artefakter
+    public class Artefakter 
     {
-        private int _aId;
-        private string _name;
-        private int _year;
-        private string _description;
-        private string _pic;
+        private int qaId;
+        private string qname;
+        private int qyear;
+        private string qdescription;
+        private string qpic;
 
+
+        public Artefakter()
+        {
+            qaId = 1;
+            qname = "Artefakt1";
+            qdescription = "beskrivelse1";
+            qpic = "pic5";
+            qyear = 1990;
+
+        }
 
         public Artefakter(int aId, string name, int year, string description, string pic)
         {
-            _aId = aId;
-            _name = name;
-            _year = year;
-            _description = description;
-            _pic = pic;
+            qaId = aId;
+            qname = name;
+            qyear = year;
+            qdescription = description;
+            qpic = pic;
         }
 
         public int aId
         {
             get { return aId;}
-            set { _aId = value; }
+            set { qaId = value; }
         }
 
         public string name
         {
-            get { return _name; }
-            set { _name = value; }
+            get { return qname; }
+            set { qname = value; }
         }
 
         public int year
         {
-            get { return _year; }
-            set { _year = value; }
+            get { return qyear; }
+            set { qyear = value; }
         }
 
         public string description
         {
-            get { return _description;}
-            set { _description = value; }
+            get { return qdescription;}
+            set { qdescription = value; }
         }
 
         public string pic
         {
-            get { return _pic; }
-            set { _pic = value; }
+            get { return qpic; }
+            set { qpic = value; }
         }
 
     }

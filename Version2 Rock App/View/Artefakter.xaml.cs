@@ -42,5 +42,9 @@ namespace Version2_Rock_App.View
         {
 
         }
+        private void KnapTour_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(tour2));
+        }
     }
 }

@@ -144,6 +144,7 @@
   <ItemGroup>
     <Content Include="Assets\2etage.png" />
     <Content Include="Assets\3etage.png" />
+    <Content Include="Assets\ForsidePic.jpg" />
     <Content Include="Assets\kort.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

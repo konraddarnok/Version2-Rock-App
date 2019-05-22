@@ -15,6 +15,8 @@
         <Button x:Name="knapArtefakter" Click="KnapArtefakter_OnClick" Content="Artefakter" HorizontalAlignment="Left" Height="47" Margin="36,192,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FocusVisualSecondaryBrush="DodgerBlue" Background="DodgerBlue"/>
         <Button x:Name="knapKontakt" Content="Kontakt" HorizontalAlignment="Left" Height="47" Margin="36,258,0,0" VerticalAlignment="Top" Width="159" Background="DodgerBlue" Foreground="White"/>
         <Button x:Name="knapForside" Click="KnapForside_OnClick" Content="Forside" HorizontalAlignment="Left" Height="47" Margin="36,58,0,0" VerticalAlignment="Top" Width="159" Foreground="White" Background="DodgerBlue"/>
+        <Button x:Name="knapTour" Click="KnapTour_OnClick"  Content="Rundvisning" HorizontalAlignment="Left" Height="47" Margin="36,126,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FocusVisualSecondaryBrush="DodgerBlue" Background="DodgerBlue"/>
+
         <Rectangle HorizontalAlignment="Left" Height="399" Margin="339,30,0,0" VerticalAlignment="Top" Width="699" StrokeThickness="3" Stroke="LightSteelBlue" FocusVisualPrimaryBrush="White"/>
         <TextBlock HorizontalAlignment="Left" Height="52" Margin="433,44,0,0" Text="Artefakter" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="24" FocusVisualPrimaryBrush="#FF5F0E0E" FontWeight="Bold" SelectionChanged="TextBlock_SelectionChanged"/>
         <Image HorizontalAlignment="Left" Height="280" Margin="689,105,0,0" VerticalAlignment="Top" Width="301" />
