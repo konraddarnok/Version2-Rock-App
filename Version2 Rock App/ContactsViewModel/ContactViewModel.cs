@@ -1,34 +1,59 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Version2_Rock_App.Common;
+using Version2_Rock_App.Model;
 
-namespace Version2_Rock_App
+namespace Version2_Rock_App.ContactsViewModel
 {
-    class ContactsViewModel : INotifyPropertyChanged
+    class ContactViewModel : INotifyPropertyChanged
     {
         private string _name;
-        private int _tlfnr;
+        private int _telephonenumber;
         private ContactsList contactlist;
-        
+        private int _generaltelephonenumber;
+        private string _webaddress;
+        private string _complaintwebaddress;
+
         public string Name
         {
             get { return _name; }
             set { _name = value; }
         }
 
-        public int TlfNr
+
+        public int TelephoneNumber
         {
-            get { return _tlfnr; }
-            set { _tlfnr = value; }
+            get { return _telephonenumber; }
+            set { _telephonenumber = value; }
         }
 
-        public ContactsViewModel()
+        public int GeneralTelephoneNumber
         {
-            _selectedPerson= new Person();
+            get { return _generaltelephonenumber; }
+            set { _generaltelephonenumber = value; }
+        }
+
+        public string WebAddress
+        {
+            get { return _webaddress; }
+            set { _webaddress = value; }
+        }
+
+        public string ComplaintWebAddress
+        {
+            get { return _complaintwebaddress; }
+            set { _complaintwebaddress = value; }
+        }
+
+        public ContactViewModel()
+        {
+            _selectedPerson = new Person();
             contactlist = new ContactsList();
             DeleteCommand = new RelayCommand(toDeletePerson);
             AddCommand = new RelayCommand(toAddPerson);
@@ -39,7 +64,7 @@ namespace Version2_Rock_App
 
         public void toAddPerson()
         {
-            Person NewPerson= new Person(_name, _tlfnr);
+            Person NewPerson = new Person(_name, _telephonenumber);
             contactlist.addPerson(NewPerson);
             OnPropertyChanged(nameof(All_Persons));
         }

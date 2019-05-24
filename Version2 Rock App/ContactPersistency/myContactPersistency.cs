@@ -1,50 +1,55 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.AI.MachineLearning;
+using Windows.Storage;
 
 namespace Version2_Rock_App.ContactPersistency
 {
-    public class ContactPersistency<> where : class 
+    public class myContactPersistency<T> where T : class 
     {
-        private const string
+        private const string FileName = "mydata.json";
         private CreationCollisionOption _options;
         private StorageFolder _folder;
 
-        public ContactPersistency()
+        public myContactPersistency()
         {
             _options = CreationCollisionOption.OpenIfExists;
             _folder = ApplicationData.Current.LocalFolder;
         }
 
-        public async Task SaveAsync(List<> data)
+        public async Task SaveAsync(List<T> data)
         {
             var dataFile = await _folder.CreateFileAsync(FileName, _options);
             string dataJSON = JsonConvert.SerializeObject(data);
             await FileIO.WriteTextAsync(dataFile, dataJSON);
         }
 
-        public async Task <List<>> LoadAsync()
+        public async Task <List<T>> LoadAsync()
         {
             try
             {
                 StorageFile dataFile = await _folder.GetFileAsync(FileName);
                 string DataJSON = await FileIO.ReadTextAsync(dataFile);
-                if(DataJSON != null)
+                if (DataJSON != null)
                 {
-                    return JsonConvert.DeserializeObject<List<>>(dataJSON);
+                    return JsonConvert.DeserializeObject<List<T>>(DataJSON);
                 }
                 else
                 {
-                    return new List<>();
+                    return new List<T>();
                 }
-                catch (FileNotFoundException)
+            }
+            catch (FileNotFoundException)
             {
-                await SaveAsync(new List<>());
-                return new List<>();
+                await SaveAsync(new List<T>());
+                return new List<T>();
             }
-            }
+
         }
     }
 }

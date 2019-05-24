@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Version2_Rock_App.ContactPersistency;
 
-namespace Version2_Rock_App
+namespace Version2_Rock_App.Model
 {
     class ContactsList
     {
         private List<Person> _persons;
-
+        private myContactPersistency<Person> _fileSource;
         public ContactsList()
         {
             _persons = new List<Person>();
+            _fileSource = new myContactPersistency<Person>();
         }
 
         public void removePerson(Person p)
@@ -27,7 +29,7 @@ namespace Version2_Rock_App
             {
                 foreach (var p in _persons)
                 {
-                    if (p.tlfnr == np.tlfnr)
+                    if (p.TelephoneNumber == np.TelephoneNumber)
                         exist = true;
                 }
                 if (exist == false)

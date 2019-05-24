@@ -4,23 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Version2_Rock_App
+namespace Version2_Rock_App.Model
 {
     class Person
     {
         private string _name;
-        private int _tlfnr;
+        private int _telephonenumber;
 
         public Person()
         {
             _name = "Johnny";
-            _tlfnr = 25836009;
+            _telephonenumber = 25836009;
         }
 
-        public Person(string Name, int tlfnr)
+        public Person(string Name, int telephonenumber)
         {
             _name = Name;
-            _tlfnr = tlfnr;
+            _telephonenumber = telephonenumber;
         }
 
         public string Name
@@ -29,10 +29,10 @@ namespace Version2_Rock_App
             set { _name = value; }
         }
 
-        public int tlfnr
+        public int TelephoneNumber
         {
-            get { return _tlfnr; }
-            set { _tlfnr = value; }
+            get { return _telephonenumber; }
+            set { _telephonenumber = value; }
         }
     }
 }
