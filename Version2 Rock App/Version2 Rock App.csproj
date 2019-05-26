@@ -122,6 +122,7 @@
     <Compile Include="Model\Artist.cs" />
     <Compile Include="Model\genre.cs" />
     <Compile Include="Model\kort.cs" />
+    <Compile Include="Model\musikalskeStrømme.cs" />
     <Compile Include="Relay\RelayCommand.cs" />
     <Compile Include="ViewModel\RockViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">
@@ -133,6 +134,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Version2 Rock App_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
