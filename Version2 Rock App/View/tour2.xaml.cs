@@ -32,5 +32,15 @@ namespace Version2_Rock_App.View
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

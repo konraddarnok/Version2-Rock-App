@@ -17,7 +17,7 @@ namespace Version2_Rock_App.Model
         private int qyear;
         private string qdescription;
         private string qpic;
-
+        private int qIdCount = 1;
 
         public Artefakter()
         {
@@ -26,6 +26,7 @@ namespace Version2_Rock_App.Model
             qdescription = "beskrivelse1";
             qpic = "pic5";
             qyear = 1990;
+           
 
         }
 
@@ -36,6 +37,8 @@ namespace Version2_Rock_App.Model
             qyear = year;
             qdescription = description;
             qpic = pic;
+            qIdCount++;
+
         }
 
         public int aId
@@ -67,6 +70,7 @@ namespace Version2_Rock_App.Model
             get { return qpic; }
             set { qpic = value; }
         }
+      
 
     }
     
