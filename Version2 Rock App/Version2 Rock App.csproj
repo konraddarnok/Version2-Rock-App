@@ -11,7 +11,7 @@
     <AssemblyName>Version2 Rock App</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -119,19 +119,21 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Common\RelayCommand.cs" />
-    <Compile Include="ContactPersistency\myContactPersistency.cs" />
-    <Compile Include="ContactsModel\GeneralContact.cs" />
-    <Compile Include="ContactsViewModel\ContactViewModel.cs" />
-    <Compile Include="ContactsView\ContactsView.xaml.cs">
-      <DependentUpon>ContactsView.xaml</DependentUpon>
+    <Compile Include="Model\Artefakter.cs" />
+    <Compile Include="Model\artefaktkatalog.cs" />
+    <Compile Include="Model\Artist.cs" />
+    <Compile Include="Relay\RelayCommand.cs" />
+    <Compile Include="ViewModel\RockViewModel.cs" />
+    <Compile Include="View\Artefakter.xaml.cs">
+      <DependentUpon>Artefakter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContactsModel\Person.cs" />
-    <Compile Include="ContactsModel\ContactsList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\tour2.xaml.cs">
+      <DependentUpon>tour2.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -140,6 +142,10 @@
     <None Include="Version2 Rock App_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\2etage.png" />
+    <Content Include="Assets\3etage.png" />
+    <Content Include="Assets\ForsidePic.jpg" />
+    <Content Include="Assets\kort.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -154,23 +160,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="ContactsView\ContactsView.xaml">
+    <Page Include="View\Artefakter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\tour2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.3</Version>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.2</Version>
-    </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

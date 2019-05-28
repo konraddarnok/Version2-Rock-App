@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Version2_Rock_App.View.tour"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Version2_Rock_App.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" StrokeThickness="3" FocusVisualPrimaryBrush="Black" Fill="#FFE5E5E5" FocusVisualSecondaryBrush="Black" Stroke="LightSteelBlue"/>
+        <Rectangle HorizontalAlignment="Left" Height="490" Margin="312,10,0,0" VerticalAlignment="Top" Width="839" StrokeThickness="3" Stroke="LightSteelBlue" Fill="#FFE5E5E5" FocusVisualPrimaryBrush="Black"/>
+        <Button x:Name="knapTour" Click="KnapTour_OnClick"  Content="Rundvisning" HorizontalAlignment="Left" Height="47" Margin="36,130,0,0" VerticalAlignment="Top" Width="159" Background="DodgerBlue" Foreground="White"/>
+        <Button x:Name="knapArtefakter" Click="KnapArtefakter_OnClick" Content="Artefakter" HorizontalAlignment="Left" Height="47" Margin="36,192,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FocusVisualSecondaryBrush="DodgerBlue" Background="DodgerBlue"/>
+        <Button x:Name="knapKontakt" Content="Kontakt" HorizontalAlignment="Left" Height="47" Margin="36,258,0,0" VerticalAlignment="Top" Width="159" Background="DodgerBlue" Foreground="White"/>
+        <Button x:Name="knapForside" Click="KnapForside_OnClick" Content="Forside" HorizontalAlignment="Left" Height="47" Margin="36,58,0,0" VerticalAlignment="Top" Width="159" Foreground="White" Background="DodgerBlue"/>
+        <Rectangle HorizontalAlignment="Left" Height="399" Margin="339,30,0,0" VerticalAlignment="Top" Width="699" StrokeThickness="3" Stroke="LightSteelBlue" FocusVisualPrimaryBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="52" Margin="433,44,0,0" Text="Artefakter" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="24" FocusVisualPrimaryBrush="#FF5F0E0E" FontWeight="Bold" SelectionChanged="TextBlock_SelectionChanged"/>
+        <Image HorizontalAlignment="Left" Height="280" Margin="689,105,0,0" VerticalAlignment="Top" Width="301" />
+    </Grid>
+</Page>
