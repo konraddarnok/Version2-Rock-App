@@ -6,69 +6,72 @@ using System.Threading.Tasks;
 using Version2_Rock_App;
 
 namespace Version2_Rock_App.Model
+//Konrad Kirkebjerg
 {
 
     
 
     public class Artefakter 
     {
-        private int qaId;
-        private string qname;
-        private int qyear;
-        private string qdescription;
-        private string qpic;
-        private int qIdCount = 1;
+        private int _aId;
+        private string _name;
+        private int _year;
+        private string _description;
+        private string _pic;
+
+
+
 
         public Artefakter()
         {
-            qaId = 1;
-            qname = "Artefakt1";
-            qdescription = "beskrivelse1";
-            qpic = "pic5";
-            qyear = 1990;
-           
+            _aId = 1;
+            _name = "Musikkalske strømme";
+            _description = "90’erne var overfladiske og kiksede. Men det var også et danseårti, hvor vi smilede og dansede";
+            _pic = "pic5";
+            _year = 1990;
+
 
         }
 
         public Artefakter(int aId, string name, int year, string description, string pic)
         {
-            qaId = aId;
-            qname = name;
-            qyear = year;
-            qdescription = description;
-            qpic = pic;
-            qIdCount++;
+            _aId = aId;
+            _name = name;
+            _year = year;
+            _description = description;
+            _pic = pic;
+           
 
         }
 
         public int aId
         {
             get { return aId;}
-            set { qaId = value; }
+            set { _aId = value; }
         }
 
         public string name
         {
-            get { return qname; }
-            set { qname = value; }
+            get { return _name; }
+            set { _name = value; }
         }
 
         public int year
         {
-            get { return qyear; }
-            set { qyear = value; }
+            get { return _year; }
+            set { _year = value; }
         }
 
         public string description
         {
-            get { return qdescription;}
-            set { qdescription = value; }
+            get { return _description;}
+            set { _description = value; }
         }
 
         public string pic
         {
-            get { return qpic; }
-            set { qpic = value; }
+            get { return _pic; }
+            set { _pic = value; }
         }
       
 

@@ -1,26 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Version2_Rock_App.Model;
+using Version2_Rock_App.Relay;
 
 namespace Version2_Rock_App.ViewModel
 {
     class RockViewModel : INotifyPropertyChanged
     {
 
-        private artefaktkatalog _selectedkatalog;
+        private artefaktkatalog katalog;
 
         public RockViewModel()
         {
             _selectedArtefakt = new Artefakter();
-          _selectedkatalog = new artefaktkatalog();
+          katalog = new artefaktkatalog();
         }
 
+
         private Artefakter _selectedArtefakt;
+        private object catalog;
+
         public Artefakter SelectArtefakt
         {
             get { return _selectedArtefakt; }
@@ -28,17 +33,31 @@ namespace Version2_Rock_App.ViewModel
         }
 
 
+       
+
         public artefaktkatalog SelectArtefaktkatalog
         {
             get {
-                return _selectedkatalog;          }
+                return katalog;}
             set {
-                _selectedkatalog = value; OnPropertyChanged();
+               katalog = value; OnPropertyChanged();
             }
             
         }
 
-       
+
+        public ObservableCollection<Artefakter> All_artefacts
+        {
+            get
+            {
+                ObservableCollection<Artefakter> collection = new ObservableCollection<Artefakter>(katalog.Artefakter);
+                return collection;
+
+
+            }
+        }
+
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged
             ([CallerMemberName] string propertyName = null)
@@ -47,5 +66,7 @@ namespace Version2_Rock_App.ViewModel
                 PropertyChangedEventArgs(propertyName));
         } 
         
+        
+
     }
 }

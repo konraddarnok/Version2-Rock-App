@@ -42,5 +42,10 @@ namespace Version2_Rock_App.View
         {
             
         }
+
+        private void ListView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

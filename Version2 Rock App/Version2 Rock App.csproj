@@ -122,6 +122,7 @@
     <Compile Include="Model\Artefakter.cs" />
     <Compile Include="Model\artefaktkatalog.cs" />
     <Compile Include="Model\Artist.cs" />
+    <Compile Include="Model\genre.cs" />
     <Compile Include="Relay\RelayCommand.cs" />
     <Compile Include="ViewModel\RockViewModel.cs" />
     <Compile Include="View\Artefakter.xaml.cs">

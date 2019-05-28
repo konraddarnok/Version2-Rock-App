@@ -11,7 +11,7 @@
 
     
     <Grid Background="White">
-
+<!--Konrad Kirkebjerg-->
         <Rectangle HorizontalAlignment="Left" Height="490" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" StrokeThickness="3" FocusVisualPrimaryBrush="Black" Fill="#FFE5E5E5" FocusVisualSecondaryBrush="Black" Stroke="LightSteelBlue"/>
         <Rectangle HorizontalAlignment="Left" Height="490" Margin="312,10,0,0" VerticalAlignment="Top" Width="839" StrokeThickness="3" Stroke="LightSteelBlue" Fill="#FFE5E5E5" FocusVisualPrimaryBrush="Black"/>
         
@@ -23,7 +23,7 @@
         <TextBlock HorizontalAlignment="Left" Height="229" Margin="353,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" FontSize="24">
             <Run Text="Velkommen til Rock museet ragnarock."/>
             <LineBreak/>
-            <Run Text="Her kan "/>
+            <Run Text="Her kan du "/>
             <Run Text="finde"/>
             <Run Text=" vores artefakor og læse  om deres historie, og få en rundvisning"/>
         </TextBlock>
